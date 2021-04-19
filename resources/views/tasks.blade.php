@@ -7,14 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-
-    <ul>
-        <?php foreach($tasks as $key => $task): ?>
-<li><a href=" {{ 'show/id' .$key }}"><?php echo $task ?></a></li>
-        <?php endforeach; ?>
-    </ul>
-
+<ul>
+    @foreach ( $tasks as $task )
+    <li><a href="tasks/show/{{$task->id}}">{{$task->title}}</a>
+        </li>
+    @endforeach
+</ul>
 </body>
 </html>
-
-

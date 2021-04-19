@@ -7,7 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo $task; ?>
+    <h1>{{ $task   }}</h1>
+
+
+  {{-- <h1><?phpecho$task;?></h1> --}}
+
 
 </body>
 </html>
